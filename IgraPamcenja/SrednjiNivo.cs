@@ -1,27 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IgraPamcenja
 {
     public partial class SrednjiNivo : Form
     {
-        Random lokacija = new Random();
-        PictureBox PrvaOtvorenaSlika;
-        PictureBox DrugaOtvorenaSlika;
-        List<Point> tacke = new List<Point>();
-        List<PictureBox> preostale_slike = new List<PictureBox>();
+        private Random lokacija = new Random();
+        private PictureBox PrvaOtvorenaSlika;
+        private PictureBox DrugaOtvorenaSlika;
+        private List<Point> tacke = new List<Point>();
+        private List<PictureBox> preostale_slike = new List<PictureBox>();
+
         public SrednjiNivo()
         {
             InitializeComponent();
- 
         }
+
         private void SrednjiNivo_Load(object sender, EventArgs e)
         {
             timer1.Start();
@@ -92,7 +88,9 @@ namespace IgraPamcenja
                 slika.Image = Properties.Resources.question_mark_jpg;
             }
         }
-        private void kartica_logika(PictureBox slika, PictureBox slikaDupl) {
+
+        private void kartica_logika(PictureBox slika, PictureBox slikaDupl)
+        {
             if (PrvaOtvorenaSlika == null)
             {
                 PrvaOtvorenaSlika = slika;
@@ -112,9 +110,9 @@ namespace IgraPamcenja
                     preostale_slike.Remove(slika);
                     preostale_slike.Remove(slikaDupl);
                     EnableImages();
-                    if (preostale_slike.Count == 0) {
+                    if (preostale_slike.Count == 0)
+                    {
                         MessageBox.Show("Честитамо!");
-
                     }
                 }
                 else
@@ -125,8 +123,8 @@ namespace IgraPamcenja
                     DrugaOtvorenaSlika.Enabled = true;
                 }
             }
-
         }
+
         private void Slika1_Click(object sender, EventArgs e)
         {
             slika1.Image = Properties.Resources.cetvorougao;
@@ -166,7 +164,7 @@ namespace IgraPamcenja
         private void Slika4_Click(object sender, EventArgs e)
         {
             slika4.Image = Properties.Resources.kvadrat;
-            kartica_logika(slika4,slika4dupl);
+            kartica_logika(slika4, slika4dupl);
         }
 
         private void Slika4dupl_Click(object sender, EventArgs e)
@@ -239,7 +237,7 @@ namespace IgraPamcenja
         {
             timer2.Stop();
             EnableImages();
-            PrvaOtvorenaSlika.Image = Properties.Resources.question_mark_jpg; 
+            PrvaOtvorenaSlika.Image = Properties.Resources.question_mark_jpg;
             DrugaOtvorenaSlika.Image = Properties.Resources.question_mark_jpg;
             PrvaOtvorenaSlika = null;
             DrugaOtvorenaSlika = null;

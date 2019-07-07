@@ -7,11 +7,12 @@ namespace IgraPamcenja
 {
     public partial class OsnovniNivo : Form
     {
-        Random lokacija = new Random();
-        PictureBox PrvaOtvorenaSlika = null;
-        PictureBox DrugaOtvorenaSlika = null;
-        List<Point> tacke = new List<Point>();
-        List<PictureBox> preostale_slike = new List<PictureBox>();
+        private Random lokacija = new Random();
+        private PictureBox PrvaOtvorenaSlika = null;
+        private PictureBox DrugaOtvorenaSlika = null;
+        private List<Point> tacke = new List<Point>();
+        private List<PictureBox> preostale_slike = new List<PictureBox>();
+
         public OsnovniNivo()
         {
             InitializeComponent();
@@ -34,7 +35,6 @@ namespace IgraPamcenja
                 slika.Location = p;
                 tacke.Remove(p);
             }
-
 
             Kartica1.Image = Properties.Resources.cetvorougao;
             Kartica1Dupl.Image = Properties.Resources.cetvorougao;
@@ -81,8 +81,6 @@ namespace IgraPamcenja
                 slika.Cursor = Cursors.Hand;
                 slika.Image = Properties.Resources.question_mark_jpg; //da postavimo sve kartice na sliku znaka pitanja
             }
-
-            
         }
 
         // restart igre
@@ -102,6 +100,7 @@ namespace IgraPamcenja
             start.ShowDialog();
             this.Close();
         }
+
         private void kartica_logika(PictureBox slika, PictureBox slikaDupl)
         {
             if (PrvaOtvorenaSlika == null)
@@ -136,12 +135,12 @@ namespace IgraPamcenja
                     DrugaOtvorenaSlika.Enabled = true;
                 }
             }
-
         }
+
         private void Kartica1_Click(object sender, EventArgs e)
         {
             Kartica1.Image = Properties.Resources.cetvorougao; //kad kliknem na Karticu1 prikazi mi cetvorougao
-            kartica_logika(Kartica1,Kartica1Dupl);
+            kartica_logika(Kartica1, Kartica1Dupl);
         }
 
         private void Kartica1Dupl_Click(object sender, EventArgs e)
@@ -174,13 +173,11 @@ namespace IgraPamcenja
             kartica_logika(Kartica3Dupl, Kartica3);
         }
 
-
         private void Kartica4_Click(object sender, EventArgs e)
         {
             Kartica4.Image = Properties.Resources.kvadrat;
             kartica_logika(Kartica4, Kartica4Dupl);
         }
-
 
         private void Kartica4Dupl_Click(object sender, EventArgs e)
         {
@@ -223,6 +220,7 @@ namespace IgraPamcenja
             Kartica7Dupl.Image = Properties.Resources.romb;
             kartica_logika(Kartica7Dupl, Kartica7);
         }
+
         private void Kartica8_Click(object sender, EventArgs e)
         {
             Kartica8.Image = Properties.Resources.trapezoid;
@@ -256,8 +254,5 @@ namespace IgraPamcenja
             PrvaOtvorenaSlika = null;
             DrugaOtvorenaSlika = null;
         }
-
-        
     }
 }
-

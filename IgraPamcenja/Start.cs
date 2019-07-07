@@ -32,5 +32,9 @@ namespace IgraPamcenja
             //napredniNivo.ShowDialog();
             //this.Close();
         }
+
+        private void Start_Load(object sender, System.EventArgs e)
+        {
+        }
     }
 }
