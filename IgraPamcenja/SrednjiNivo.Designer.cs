@@ -123,9 +123,9 @@
             this.panel1.Controls.Add(this.slika4dupl);
             this.panel1.Controls.Add(this.slika1dupl);
             this.panel1.Controls.Add(this.slika1);
-            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1100, 605);
+            this.panel1.Size = new System.Drawing.Size(1107, 608);
             this.panel1.TabIndex = 3;
             // 
             // slika6
@@ -322,11 +322,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.button2;
+            this.CancelButton = this.button1;
             this.ClientSize = new System.Drawing.Size(1104, 663);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SrednjiNivo";
