@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NapredniNivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NapredniNivo.Designer.cs">
+      <DependentUpon>NapredniNivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="SrednjiNivo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +81,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NapredniNivo.resx">
+      <DependentUpon>NapredniNivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SrednjiNivo.resx">
       <DependentUpon>SrednjiNivo.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +179,15 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="logo_100x100_xcV_icon.ico" />
+    <None Include="Resources\trougao_napredni.png" />
+    <None Include="Resources\trapez_napredni.png" />
+    <None Include="Resources\romb_napredni.png" />
+    <None Include="Resources\pravougaonik_napredni.png" />
+    <None Include="Resources\paralelogram_napredni.png" />
+    <None Include="Resources\kvadrat_napredni.png" />
+    <None Include="Resources\krug_napredni.png" />
+    <None Include="Resources\deltoid_napredni.png" />
+    <None Include="Resources\cetvorougao_napredni.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

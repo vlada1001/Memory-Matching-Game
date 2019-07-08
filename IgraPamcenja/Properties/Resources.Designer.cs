@@ -73,6 +73,16 @@ namespace IgraPamcenja.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cetvorougao_napredni {
+            get {
+                object obj = ResourceManager.GetObject("cetvorougao_napredni", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cetvorougao_srednji {
             get {
                 object obj = ResourceManager.GetObject("cetvorougao_srednji", resourceCulture);
@@ -86,6 +96,16 @@ namespace IgraPamcenja.Properties {
         internal static System.Drawing.Bitmap deltoid {
             get {
                 object obj = ResourceManager.GetObject("deltoid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap deltoid_napredni {
+            get {
+                object obj = ResourceManager.GetObject("deltoid_napredni", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,6 +133,16 @@ namespace IgraPamcenja.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap krug_napredni {
+            get {
+                object obj = ResourceManager.GetObject("krug_napredni", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap krug_srednji {
             get {
                 object obj = ResourceManager.GetObject("krug_srednji", resourceCulture);
@@ -126,6 +156,16 @@ namespace IgraPamcenja.Properties {
         internal static System.Drawing.Bitmap kvadrat {
             get {
                 object obj = ResourceManager.GetObject("kvadrat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kvadrat_napredni {
+            get {
+                object obj = ResourceManager.GetObject("kvadrat_napredni", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,6 +193,16 @@ namespace IgraPamcenja.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap paralelogram_napredni {
+            get {
+                object obj = ResourceManager.GetObject("paralelogram_napredni", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap paralelogram_srednji {
             get {
                 object obj = ResourceManager.GetObject("paralelogram_srednji", resourceCulture);
@@ -166,6 +216,16 @@ namespace IgraPamcenja.Properties {
         internal static System.Drawing.Bitmap pravougaonik {
             get {
                 object obj = ResourceManager.GetObject("pravougaonik", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pravougaonik_napredni {
+            get {
+                object obj = ResourceManager.GetObject("pravougaonik_napredni", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +263,29 @@ namespace IgraPamcenja.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap romb_napredni {
+            get {
+                object obj = ResourceManager.GetObject("romb_napredni", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap romb_srednji {
             get {
                 object obj = ResourceManager.GetObject("romb_srednji", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trapez_napredni {
+            get {
+                object obj = ResourceManager.GetObject("trapez_napredni", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +316,16 @@ namespace IgraPamcenja.Properties {
         internal static System.Drawing.Bitmap trougao {
             get {
                 object obj = ResourceManager.GetObject("trougao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trougao_napredni {
+            get {
+                object obj = ResourceManager.GetObject("trougao_napredni", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

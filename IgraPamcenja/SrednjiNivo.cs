@@ -21,12 +21,14 @@ namespace IgraPamcenja
         private void SrednjiNivo_Load(object sender, EventArgs e)
         {
             timer1.Start();
+
             foreach (PictureBox slika in panel1.Controls)
             {
                 slika.Enabled = false;
                 tacke.Add(slika.Location);
                 preostale_slike.Add(slika);
             }
+
             foreach (PictureBox slika in panel1.Controls)
             {
                 int neka_tacka = lokacija.Next(tacke.Count);
@@ -34,6 +36,7 @@ namespace IgraPamcenja
                 slika.Location = p;
                 tacke.Remove(p); // da ne bismo opet iskoristili istu tacku
             }
+
             slika1.Image = Properties.Resources.cetvorougao;
             slika1dupl.Image = Properties.Resources.cetvorougao_srednji;
             slika2.Image = Properties.Resources.deltoid;
@@ -112,7 +115,9 @@ namespace IgraPamcenja
                     EnableImages();
                     if (preostale_slike.Count == 0)
                     {
-                        MessageBox.Show("Честитамо!");
+                        Poruka krajIgre = new Poruka();
+                        krajIgre.ShowDialog();
+                        this.Hide();
                     }
                 }
                 else

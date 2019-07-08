@@ -27,10 +27,10 @@ namespace IgraPamcenja
 
         private void Button3_Click(object sender, System.EventArgs e)
         {
-            //this.Hide();
-            //NapredniNivo napredniNivo = new NapredniNivo();
-            //napredniNivo.ShowDialog();
-            //this.Close();
+            this.Hide();
+            NapredniNivo napredniNivo = new NapredniNivo();
+            napredniNivo.ShowDialog();
+            this.Close();
         }
 
         private void Start_Load(object sender, System.EventArgs e)
